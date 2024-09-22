@@ -328,17 +328,19 @@ ul {
 }
 
 .partners-wrapper {
-    animation: move 10s linear infinite; 
+    animation: move 10s linear infinite;
 }
 
 .partner-logo {
-    display: inline-block; 
+    display: inline-block;
     margin: 0 20px; 
     width: 200px;
     height: auto;
+    text-align: center;
 }
 
 .partner-logo img {
+    filter: grayscale(100%);
     max-width: 100%;
 }  
 
