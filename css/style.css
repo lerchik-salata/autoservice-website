@@ -490,4 +490,9 @@ ul {
     html.no-scroll {
         overflow: hidden;
     }
+
+    .footer .container {
+        flex-direction: column !important;
+        gap: 20px;
+    }
 }
