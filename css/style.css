@@ -1,3 +1,5 @@
+/* GENERAL STYLES */
+
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +25,8 @@ ul {
     padding-left: 30px !important;
     padding-right: 30px !important;
 }
+
+/* HEADER */
 
 .header {
     background-color: #0E0E0E;
@@ -70,6 +74,8 @@ ul {
 .btn-primary:hover {
     background-color: #D42E12;
 }
+
+/* MAIN PAGE */
 
 .hero-section {
     height: 620px;
@@ -359,6 +365,8 @@ ul {
     width: 100%; 
 }
 
+/* FOOTER */
+
 .footer {
     background-color: #0E0E0E;
     background-image: url('../assets/img/footer-bg.png');
@@ -388,6 +396,100 @@ ul {
 .footer-info {
     color: #5f6368;
 }
+
+/* FAQ PAGE */
+
+.faq_section {
+    padding: 80px 0px;
+    background-image: url('../assets/img/services-bg.png');
+}
+
+.faq_caption {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.faq_items {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq_item {
+    background: linear-gradient(90deg, #D42E12 0%, rgba(212, 46, 18, 0) 100%);
+    clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
+    padding: 30px;
+  }
+  
+  .faq_question {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .faq_question_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .faq_question_btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .faq_answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }  
+
+/* SERVICES PAGE */
+
+.service-table {
+    padding: 80px 0;
+    background-image: url('../assets/img/services-bg.png');
+}
+
+.table_container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #D42E12 !important;
+    text-align: left;
+}
+
+.action_btn {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #1D1D1D;
+    transition: all 0.3s;
+}
+
+.action_btn:hover {
+    color: #C53720;
+}
+
+.action_btn:last-child {
+    margin-right: 0;
+}
+
+/* ADAPTIVE STYLES */
 
 @media (max-width: 767px) {
     .features-list {
@@ -494,5 +596,19 @@ ul {
     .footer .container {
         flex-direction: column !important;
         gap: 20px;
+    }
+
+    .faq_question_row {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .action_btn {
+        padding: 5px;
     }
 }
