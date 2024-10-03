@@ -446,127 +446,14 @@ ul {
     transition: max-height 0.3s ease-out;
   }
 
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
-.register {
-    display: flex;
-    height: 100vh;
+
+.register,
+.login-page {
     text-align: center;
-    align-items: center;
-    justify-content: center;
     background: #151515;
-    flex-direction: column;
-}
-.registration-form {
-    position: relative;
-    width: 370px;
-    height: auto;
-    background: #1b1b1b;
-    padding: 40px 35px 60px;
-    box-sizing: border-box;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: inset 0 0 1px #272727;
-}
-.text {
-    font-size: 30px;
-    color: #c7c7c7;
-    font-weight: 600;
-    letter-spacing: 2px;
-}
-form {
-    margin-top: 40px;
-}
-form .field {
-    margin-top: 20px;
-    display: flex;
-}
-.field .fas {
-    height: 50px;
-    width: 60px;
-    color: #868686;
-    font-size: 20px;
-    line-height: 50px;
-    border: 1px solid #444;
-    border-right: none;
-    border-radius: 5px 0 0 5px;
-    background: linear-gradient(#333, #222);
-}
-.field input, form button {
-    height: 50px;
-    width: 100%;
-    outline: none;
-    font-size: 19px;
-    color: #868686;
-    padding: 0 15px;
-    border-radius: 0 5px 5px 0;
-    border: 1px solid #444;
-    caret-color: #D42E12;
-    background: linear-gradient(#333, #222);
-}
-input:focus {
-    color: #D42E12;
-    box-shadow: 0 0 5px rgba(212, 46, 18, .2), inset 0 0 5px rgba(212, 46, 18, .1);
-    background: linear-gradient(#331010, #220a0a);
-    animation: glow .8s ease-out infinite alternate;
-}
-@keyframes glow {
-    0% {
-        border-color: #D42E12;
-        box-shadow: 0 0 5px rgba(212, 46, 18, .2), inset 0 0 5px rgba(0, 0, 0, .1);
-    }
-    100% {
-        border-color: #ff3b3b;
-        box-shadow: 0 0 20px rgba(212, 46, 18, .6), inset 0 0 10px rgba(212, 46, 18, .4);
-    }
-}
-button {
-    margin-top: 30px;
-    border-radius: 5px !important;
-    font-weight: 600;
-    letter-spacing: 1px;
-    cursor: pointer;
-    background: #D42E12;
-    color: white;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-button:hover {
-    background-color: #C53720;
-    box-shadow: 0 0 10px rgba(212, 46, 18, 0.7), 0 0 15px rgba(212, 46, 18, 0.5), 0 0 20px rgba(212, 46, 18, 0.3);
-}
-.link {
-    margin-top: 25px;
-    color: #868686;
-}
-.link a {
-    color: #D42E12;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: color 0.3s, background-color 0.3s;
-}
-.link a:hover {
-    color: white;
-    background-color: #D42E12;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
-.login-page {
-    display: flex;
-    height: 100vh;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background: #151515;
-}
+.registration-form,
 .login-form {
     position: relative;
     width: 370px;
@@ -577,21 +464,30 @@ button:hover {
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: inset 0 0 1px #272727;
+    margin: 50px auto;
 }
-.text {
+
+.registration-form .text,
+.login-form .text {
     font-size: 30px;
     color: #c7c7c7;
     font-weight: 600;
     letter-spacing: 2px;
 }
-form {
+
+.registration-form form,
+.login-form form {
     margin-top: 40px;
 }
-form .field {
+
+.registration-form form .fieldб
+.login-form form .field {
     margin-top: 20px;
     display: flex;
 }
-.field .fas {
+
+.registration-form .field .fasб
+.login-form .field .fas {
     height: 50px;
     width: 60px;
     color: #868686;
@@ -602,7 +498,9 @@ form .field {
     border-radius: 5px 0 0 5px;
     background: linear-gradient(#333, #222);
 }
-.field input, form button {
+
+.registration-form .field input, form button,
+.login-form .field input, form button {
     height: 50px;
     width: 100%;
     outline: none;
@@ -614,12 +512,15 @@ form .field {
     caret-color: #D42E12;
     background: linear-gradient(#333, #222);
 }
-input:focus {
+
+.registration-form input:focus,
+.login-form input:focus {
     color: #D42E12;
     box-shadow: 0 0 5px rgba(212, 46, 18, .2), inset 0 0 5px rgba(212, 46, 18, .1);
     background: linear-gradient(#331010, #220a0a);
     animation: glow .8s ease-out infinite alternate;
 }
+
 @keyframes glow {
     0% {
         border-color: #D42E12;
@@ -630,7 +531,9 @@ input:focus {
         box-shadow: 0 0 20px rgba(212, 46, 18, .6), inset 0 0 10px rgba(212, 46, 18, .4);
     }
 }
-button {
+
+.registration-form button,
+.login-form button {
     margin-top: 30px;
     border-radius: 5px !important;
     font-weight: 600;
@@ -640,22 +543,30 @@ button {
     color: white;
     transition: background-color 0.3s, box-shadow 0.3s;
 }
-button:hover {
+
+.registration-form button:hover,
+.login-form button:hover {
     background-color: #C53720;
     box-shadow: 0 0 10px rgba(212, 46, 18, 0.7), 0 0 15px rgba(212, 46, 18, 0.5), 0 0 20px rgba(212, 46, 18, 0.3);
 }
-.link {
+
+.register .link,
+.login-page .link {
     margin-top: 25px;
     color: #868686;
 }
-.link a {
+
+.register .link a,
+.login-page .link a {
     color: #D42E12;
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
     transition: color 0.3s, background-color 0.3s;
 }
-.link a:hover {
+
+.register .link a:hover,
+.login-page .link a:hover {
     color: white;
     background-color: #D42E12;
 }
