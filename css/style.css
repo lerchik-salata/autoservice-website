@@ -459,6 +459,7 @@ ul {
     align-items: center;
     justify-content: center;
     background: #151515;
+    flex-direction: column;
 }
 .registration-form {
     position: relative;
