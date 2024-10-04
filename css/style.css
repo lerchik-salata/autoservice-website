@@ -480,25 +480,6 @@ ul {
     margin-top: 40px;
 }
 
-.registration-form form .fieldб
-.login-form form .field {
-    margin-top: 20px;
-    display: flex;
-}
-
-.registration-form .field .fasб
-.login-form .field .fas {
-    height: 50px;
-    width: 60px;
-    color: #868686;
-    font-size: 20px;
-    line-height: 50px;
-    border: 1px solid #444;
-    border-right: none;
-    border-radius: 5px 0 0 5px;
-    background: linear-gradient(#333, #222);
-}
-
 .registration-form .field input, form button,
 .login-form .field input, form button {
     height: 50px;
@@ -571,12 +552,6 @@ ul {
     background-color: #D42E12;
 }
 
-.text {
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 .field {
     display: flex;
     margin-bottom: 15px;
@@ -585,13 +560,12 @@ ul {
 .icon {
     background-color: #444;
     padding: 10px;
-    border-radius: 0 5px 5px 0;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 100%;
+    width: 50px;
+    height: 50px;
 }
 
 /* SERVICES PAGE */
