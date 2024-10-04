@@ -446,16 +446,17 @@ ul {
     transition: max-height 0.3s ease-out;
   }
 
+/* REGISTRATION FORM */
 
 .register,
 .login-page {
-    text-align: center;
     background: #151515;
 }
 
 .registration-form,
 .login-form {
     position: relative;
+    text-align: center;
     width: 370px;
     height: auto;
     background: #1b1b1b;
