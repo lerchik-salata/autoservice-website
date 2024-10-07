@@ -495,6 +495,64 @@ ul {
     background: linear-gradient(#333, #222);
 }
 
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    appearance: none;
+    background: #222;
+    color: #c7c7c7;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 19px;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    caret-color: #D42E12;
+    background: linear-gradient(#333, #222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.custom-file-upload:hover {
+    background-color: #C53720;
+    box-shadow: 0 0 10px rgba(212, 46, 18, 0.7), 0 0 15px rgba(212, 46, 18, 0.5), 0 0 20px rgba(212, 46, 18, 0.3);
+}
+
+.file-name-display {
+    margin-left: 15px;
+    font-size: 15px;
+    color: #c7c7c7;
+    font-style: italic;
+}
+
+.registration-form .field select {
+    appearance: none;
+    background: #222;
+    color: #c7c7c7;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 19px;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    caret-color: #D42E12;
+    background: linear-gradient(#333, #222);
+}
+
+.registration-form input:focus,
+.registration-form select:focus,
+.registration-form input[type="file"]:focus {
+    color: #D42E12;
+    box-shadow: 0 0 5px rgba(212, 46, 18, .2), inset 0 0 5px rgba(212, 46, 18, .1);
+    background: linear-gradient(#331010, #220a0a);
+}
+
 .registration-form input:focus,
 .login-form input:focus {
     color: #D42E12;

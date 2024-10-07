@@ -33,13 +33,21 @@
             <span></span>
         </button>
     </div>
-</header>
+  </header>
   <div class="registration-form">
     <div class="text">Register</div>
     <form action="#">
       <div class="field">
         <div class="icon"><span class="fas fa-user"></span></div>
-        <input type="text" placeholder="Name" required>
+        <input type="text" placeholder="First Name" required>
+      </div>
+      <div class="field">
+        <div class="icon"><span class="fas fa-user"></span></div>
+        <input type="text" placeholder="Last Name" required>
+      </div>
+      <div class="field">
+        <div class="icon"><span class="fas fa-user"></span></div>
+        <input type="text" placeholder="Middle Name" required>
       </div>
       <div class="field">
         <div class="icon"><span class="fas fa-envelope"></span></div>
@@ -53,12 +61,32 @@
         <div class="icon"><span class="fas fa-lock"></span></div>
         <input type="password" placeholder="Confirm Password" required>
       </div>
+      <div class="field">
+        <div class="icon"><span class="fas fa-calendar-alt"></span></div>
+        <input type="date" lang="en" placeholder="MM/DD/YYYY" required>
+      </div>
+      <div class="field">
+        <div class="icon"><span class="fas fa-list"></span></div>
+        <select required>
+          <option value="" disabled selected>Select a Group</option>
+          <option value="group1">Group 1</option>
+          <option value="group2">Group 2</option>
+          <option value="group3">Group 3</option>
+        </select>
+      </div>
+      <div class="field">
+        <div class="icon"><span class="fas fa-upload"></span></div>
+        <label for="file-upload" class="custom-file-upload">
+          Select File
+        </label>
+        <input id="file-upload" type="file" accept=".jpg,.png,.pdf" data-file-name="No file selected" required>
+      </div>
       <button type="submit">Sign Up</button>
     </form>
     <div class="link">
       <a href="login.html">Already have an account?</a>
     </div>
-  </div>
+    </div>
   <footer class="footer py-5">
     <div class="container d-flex justify-content-between">
       <div class="d-flex flex-column gap-4">
