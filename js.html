@@ -36,6 +36,19 @@
     </header>
     <main class="service-table">
        <div class="container">
+           <h1>Calculation of rectangle parameters</h1>
+           <div class = "calculator">
+               <label for="length">Length:</label>
+               <input type="number" id="length" placeholder="Enter length" oninput="calculate()" />
+
+               <label for="width">Width:</label>
+               <input type="number" id="width" placeholder="Enter width" oninput="calculate()" />
+           </div>
+           <div id="results">
+               <p>Perimeter: <span id="perimeter">0</span></p>
+               <p>Area: <span id="area">0</span></p>
+               <p>Diagonal: <span id="diagonal">0</span></p>
+           </div>
         <div class="chat-container">
             <div class="user-input">
                 <label for="user1-input">User 1:</label>
@@ -48,7 +61,11 @@
                 <textarea id="user2-input" placeholder="Enter message" class="user-input" rows="3"></textarea>
                 <button class="btn-primary" onclick="sendMessage(2)">Send</button>
             </div>
-        </div>            
+        </div>
+           <h1>Transliteration</h1>
+           <textarea id="inputText" rows="5" cols="50" placeholder="Enter Ukrainian text"></textarea>
+           <br><br>
+           <textarea id="outputText" rows="5" cols="50" placeholder="Transliteration" readonly></textarea>
        </div>
     </main>
     <footer class="footer py-5">
@@ -113,5 +130,7 @@
 </body>
 <script src="js/script.js"></script>
 <script src="js/chat.js"></script>
+<script src="js/calculate.js"></script>
+<script src="js/translate.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
