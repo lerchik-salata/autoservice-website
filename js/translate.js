@@ -47,7 +47,7 @@ function transliterateText() {
 }
 function filterLetters(event) {
     const input = event.target.value;
-    const filteredInput = input.replace(/[^а-яА-ЯїЇєЄіІґҐ]/g, '');
+    const filteredInput = input.replace(/[^а-яА-ЯїЇєЄіІґҐ\s]/s, '');
     event.target.value = filteredInput;
     transliterateText();
 }

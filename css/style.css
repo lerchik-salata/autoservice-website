@@ -508,14 +508,14 @@ input[type="file"] {
     outline: none;
     font-size: 19px;
     padding: 0 15px;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: left;
     border: 1px solid #444;
     caret-color: #D42E12;
     background: linear-gradient(#333, #222);
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 .custom-file-upload:hover {
@@ -539,7 +539,8 @@ input[type="file"] {
     outline: none;
     font-size: 19px;
     padding: 0 15px;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     border: 1px solid #444;
     caret-color: #D42E12;
     background: linear-gradient(#333, #222);
@@ -613,7 +614,6 @@ input[type="file"] {
 
 .field {
     display: flex;
-    margin-bottom: 15px;
 }
 
 .icon {
@@ -768,6 +768,56 @@ th, td {
     margin-top: 20px;
     width: 20px;
     gap: 20px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 30px;
+}
+
+.radio-input {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.radio-input label {
+    color: #c7c7c7;
+    font-size: 18px;
+}
+
+.radio-input input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #444;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .radio-input input[type="radio"]:checked {
+    border-color: red;
+  }
+  
+.input-title {
+    color: #868686;
+    font-size: 19px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.field-container {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.error {
+    color: #D42E12;
 }
 
 /* ADAPTIVE STYLES */
