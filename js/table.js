@@ -1,14 +1,17 @@
 document.getElementById('form').addEventListener('submit', function(event) {
     event.preventDefault();
 
+    // Збираємо дані з форми
     const firstName = document.querySelector('input[placeholder="First Name"]').value;
     const lastName = document.querySelector('input[placeholder="Last Name"]').value;
     const phone = document.querySelector('input[placeholder="Phone"]').value;
     const email = document.querySelector('input[placeholder="Email"]').value;
     const group = document.querySelector('select').value;
+    const dob = document.querySelector('input[type="date"]').value;
+    const gender = document.querySelector('input[name="gender"]:checked').value;
     const fileInput = document.querySelector('input[type="file"]');
 
-    if (firstName === '' || lastName === '' || phone === '' || email === '' || group === '') {
+    if (firstName === '' || lastName === '' || phone === '' || email === '' || group === '' || dob === '' || !gender) {
         alert('Please, fill in all fields');
         return;
     }
@@ -26,13 +29,12 @@ document.getElementById('form').addEventListener('submit', function(event) {
     newRow.insertCell(3).textContent = phone;
     newRow.insertCell(4).textContent = email;
     newRow.insertCell(5).textContent = group;
+    newRow.insertCell(6).textContent = dob;
+    newRow.insertCell(7).textContent = gender;
 
     document.getElementById('form').reset();
-
     fileInput.value = '';
 });
-
-
 
 function deleteRows() {
     const table = document.getElementById('userTable').getElementsByTagName('tbody')[0];
