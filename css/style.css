@@ -627,6 +627,69 @@ input[type="file"] {
     height: 50px;
 }
 
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.custom-table th, .custom-table td {
+    box-shadow: 0 0 10px rgba(212, 46, 18, 0.7), 0 0 15px rgba(212, 46, 18, 0.5), 0 0 20px rgba(212, 46, 18, 0.3);
+    padding: 10px;
+    text-align: center;
+}
+
+.custom-table th {
+    background-color: #D42E12;
+    font-weight: bold;
+}
+
+.custom-table td {
+    box-shadow: 0 0 10px rgba(212, 46, 18, 0.7), 0 0 15px rgba(212, 46, 18, 0.5), 0 0 20px rgba(212, 46, 18, 0.3);
+}
+
+.btn-delete, .btn-duplicate {
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-delete {
+    background-color: #b70808;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #e04343;
+}
+
+.btn-duplicate {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.btn-duplicate:hover {
+    background-color: #ec971f;
+}
+
+th {
+    border: 2px solid red;
+    padding: 8px;
+    text-align: center;
+    color: #383838;
+}
+
+td {
+    border: 2px solid red;
+    padding: 8px;
+    text-align: center;
+    color: rgba(212, 46, 18, 0.7);
+}
 /* SERVICES PAGE */
 
 .service-table {
@@ -820,69 +883,6 @@ th, td {
     color: #D42E12;
 }
 
-.custom-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.custom-table th, .custom-table td {
-    box-shadow: 0 0 10px rgba(212, 46, 18, 0.7), 0 0 15px rgba(212, 46, 18, 0.5), 0 0 20px rgba(212, 46, 18, 0.3);
-    padding: 10px;
-    text-align: center;
-}
-
-.custom-table th {
-    background-color: #D42E12;
-    font-weight: bold;
-}
-
-.custom-table td {
-    box-shadow: 0 0 10px rgba(212, 46, 18, 0.7), 0 0 15px rgba(212, 46, 18, 0.5), 0 0 20px rgba(212, 46, 18, 0.3);
-}
-
-.btn-delete, .btn-duplicate {
-    padding: 10px 20px;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 15px;
-    margin-right: 10px;
-    transition: background-color 0.3s;
-}
-
-.btn-delete {
-    background-color: #b70808;
-    color: white;
-}
-
-.btn-delete:hover {
-    background-color: #e04343;
-}
-
-.btn-duplicate {
-    background-color: #f0ad4e;
-    color: white;
-}
-
-.btn-duplicate:hover {
-    background-color: #ec971f;
-}
-
-th {
-    border: 2px solid red;
-    padding: 8px;
-    text-align: center;
-    color: #383838;
-}
-
-td {
-    border: 2px solid red;
-    padding: 8px;
-    text-align: center;
-    color: rgba(212, 46, 18, 0.7);
-}
 /* ADAPTIVE STYLES */
 
 @media (max-width: 767px) {
