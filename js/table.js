@@ -1,7 +1,6 @@
 document.getElementById('form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    // Збираємо дані з форми
     const firstName = document.querySelector('input[placeholder="First Name"]').value;
     const lastName = document.querySelector('input[placeholder="Last Name"]').value;
     const phone = document.querySelector('input[placeholder="Phone"]').value;
